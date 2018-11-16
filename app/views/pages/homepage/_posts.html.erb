@@ -1,0 +1,16 @@
+<%- for post in @posts -%>
+  <div class="post-preview">
+    <%= link_to francis_cms.post_path(post) do -%>
+      <h2 class="post-title">
+        <%= post.title %>
+      </h2>
+      <h3 class="post-subtitle">
+        <%= post.excerpt %>
+      </h3>
+    <%- end -%>
+    <p class="post-meta">Posted by
+      <a href="#">Start Bootstrap</a>
+      on <%= l(post.published_at.to_date, format: :long) %></p>
+  </div>
+  <hr>
+<%- end -%>

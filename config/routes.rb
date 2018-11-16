@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
   mount FrancisCms::Engine, at: '/'
+
+  scope module: 'francis_cms' do
+    resources :notes, :likes do
+        resources :syndications, only: [:create, :destroy]
+
+        get 'archives',       on: :collection, to: 'archives#index'
+        get 'archives/:year', on: :collection, to: 'archives#show', year: /\d{4}/, as: 'annual_archives'
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

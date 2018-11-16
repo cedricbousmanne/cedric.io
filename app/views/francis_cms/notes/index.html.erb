@@ -1,0 +1,32 @@
+<%- @page_title = "Notes#{' — Page ' + @notes.current_page.to_s if @notes.current_page > 1}" -%>
+
+<div class="h-feed">
+  <header class="content-header">
+    <h1 class="p-name">Notes</h1>
+    <%- if @notes.total_pages > 1 -%>
+      <small>Page <%= @notes.current_page %> of <%= @notes.total_pages %></small>
+    <%- end -%>
+  </header>
+
+  <div class="content-container">
+    <%- if @notes.any? -%>
+      <div class="entries" reversed>
+        <%- @notes.each do |note| -%>
+          <div>
+            <%= render 'francis_cms/shared/note_hentry', note: note %>
+          </div>
+        <%- end -%>
+      </div>
+
+      <%#= will_paginate @notes %>
+
+      <%= render 'francis_cms/shared/archives_promo', url: Rails.application.routes.url_helpers.archives_notes_path %>
+    <%- else -%>
+      <p>No notes found!</p>
+    <%- end -%>
+  </div>
+
+  <footer class="content-footer">
+    <%= render 'francis_cms/shared/author_hcard' %>
+  </footer>
+</div>
