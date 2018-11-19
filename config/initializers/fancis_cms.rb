@@ -13,4 +13,13 @@ Rails.application.config.tap do |config|
 
   config.francis_cms.license_title    = 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International'
   config.francis_cms.license_url      = 'http://creativecommons.org/licenses/by-nc-sa/4.0/'
+
+  config.before_configuration do |app|
+    app.config.francis_cms.github_profile = "https://github.com/cedricbousmanne"
+    app.config.francis_cms.google_plus_profile = "https://plus.google.com/104650554376489234150"
+    app.config.francis_cms.twitter_profile = "https://twitter.com/akyrho"
+    app.config.francis_cms.facebook_profile = "https://www.facebook.com/706606295"
+    app.config.francis_cms.micro_blog_profile = "https://micro.blog/AkyRhO"
+    app.config.francis_cms.instagram_profile = "https://www.instagram.com/akyrh0"
+  end
 end

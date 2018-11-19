@@ -23,6 +23,25 @@
     <%= stylesheet_link_tag    'clean-blog.min.css', media: 'all' %>
     <%= csrf_meta_tags %>
 
+    <%- if Rails.application.config.francis_cms.github_profile -%>
+      <link rel="me" href="<%= Rails.application.config.francis_cms.github_profile %>" />
+    <%- end -%>
+    <%- if Rails.application.config.francis_cms.google_plus_profile -%>
+      <link rel="me" href="<%= Rails.application.config.francis_cms.google_plus_profile %>" />
+    <%- end -%>
+    <%- if Rails.application.config.francis_cms.twitter_profile -%>
+      <link rel="me" href="<%= Rails.application.config.francis_cms.twitter_profile %>" />
+    <%- end -%>
+    <%- if Rails.application.config.francis_cms.facebook_profile -%>
+      <link rel="me" href="<%= Rails.application.config.francis_cms.facebook_profile %>" />
+    <%- end -%>
+    <%- if Rails.application.config.francis_cms.micro_blog_profile -%>
+      <link rel="me" href="<%= Rails.application.config.francis_cms.micro_blog_profile %>" />
+    <%- end -%>
+    <%- if Rails.application.config.francis_cms.instagram_profile -%>
+      <link rel="me" href="<%= Rails.application.config.francis_cms.instagram_profile %>" />
+    <%- end -%>
+
   </head>
 
   <body>
