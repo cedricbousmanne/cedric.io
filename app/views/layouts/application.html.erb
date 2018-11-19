@@ -41,6 +41,9 @@
     <%- if Rails.application.config.francis_cms.instagram_profile -%>
       <link rel="me" href="<%= Rails.application.config.francis_cms.instagram_profile %>" />
     <%- end -%>
+    <%- if Rails.application.config.francis_cms.pgp_profile -%>
+      <link rel="pgpkey" href="<%= Rails.application.config.francis_cms.pgp_profile %>https://keybase.io/akyrho/pgp_keys.asc?fingerprint=ca38cf177a870454861c6e44f99f755f111716c7" />
+    <%- end -%>
 
   </head>
 

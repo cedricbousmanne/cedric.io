@@ -21,5 +21,6 @@ Rails.application.config.tap do |config|
     app.config.francis_cms.facebook_profile = "https://www.facebook.com/706606295"
     app.config.francis_cms.micro_blog_profile = "https://micro.blog/AkyRhO"
     app.config.francis_cms.instagram_profile = "https://www.instagram.com/akyrh0"
+    app.config.francis_cms.pgp_profile = "https://keybase.io/akyrho/pgp_keys.asc?fingerprint=ca38cf177a870454861c6e44f99f755f111716c7"
   end
 end
