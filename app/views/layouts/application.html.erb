@@ -45,6 +45,10 @@
       <link rel="pgpkey" href="<%= Rails.application.config.francis_cms.pgp_profile %>https://keybase.io/akyrho/pgp_keys.asc?fingerprint=ca38cf177a870454861c6e44f99f755f111716c7" />
     <%- end -%>
 
+    <%- if Rails.application.config.francis_cms.authorization_endpoint -%>
+      <link rel="authorization_endpoint" href="<%= Rails.application.config.francis_cms.authorization_endpoint %>">
+    <%- end -%>
+
   </head>
 
   <body>
