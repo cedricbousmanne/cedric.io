@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   mount FrancisCms::Engine, at: '/'
 
   scope module: 'francis_cms' do
-    resources :notes, :likes do
+    resources :notes, :checkins do
         resources :syndications, only: [:create, :destroy]
 
         get 'archives',       on: :collection, to: 'archives#index'
