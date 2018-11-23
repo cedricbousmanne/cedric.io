@@ -7,6 +7,7 @@
       <a href="http://example.com/venue" class="p-name"><%= checkin.title %></a>
       <data class="p-latitude" value="<%= checkin.latitude %>"></data>
       <data class="p-longitude" value="<%= checkin.longitude %>"></data>
+      <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v10/static/geojson(%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B<%= checkin.longitude %>%2C<%= checkin.latitude %>%5D%7D)/<%= checkin.longitude %>,<%= checkin.latitude %>,12,0,60/500x300?access_token=pk.eyJ1IjoiYWt5cmhvIiwiYSI6ImNqbjMwMnV4ZTMyMzQzd3F5cGtqcmh6aGYifQ.upfzO7JqflMeDh95zmqxKg">
     </span>
   </span>
   <div class="e-content"><%= checkin.body.html_safe %></div>

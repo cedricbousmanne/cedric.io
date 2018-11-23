@@ -1,7 +1,10 @@
 <%- is_expanded = true if is_expanded.nil? -%>
 
 <article class="entry h-entry" data-entry-type="note">
-
+  <%- if note.title.present? -%>
+    <h2><%= note.title %></h2>
+  <%- end -%>
+  
   <div class="entry-excerpt p-summary">
     <p><%= note.body.html_safe %></p>
   </div>
