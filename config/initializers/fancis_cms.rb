@@ -22,6 +22,7 @@ Rails.application.config.tap do |config|
     app.config.francis_cms.micro_blog_profile = "https://micro.blog/AkyRhO"
     app.config.francis_cms.instagram_profile = "https://www.instagram.com/akyrh0"
     app.config.francis_cms.pgp_profile = "https://keybase.io/akyrho/pgp_keys.asc?fingerprint=ca38cf177a870454861c6e44f99f755f111716c7"
+    app.config.francis_cms.email = "cedric@bousmanne.com"
     
     app.config.francis_cms.authorization_endpoint = "https://indieauth.com/auth"
     app.config.francis_cms.token_endpoint = "https://tokens.indieauth.com/token"
