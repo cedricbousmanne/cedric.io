@@ -1,3 +1,17 @@
 = FrancisCmsMicropub
 
-This project rocks and uses MIT-LICENSE.
+Micropub implementation for FrancisCMS
+
+== Installation
+
+Mount the engine by adding the following line in your `routes.rb`
+
+```mount FrancisCmsMicropub::Engine => "/micropub"```
+
+Somewhere in your `<head>` tag, put the following lines :
+
+```
+<%- if Rails.application.config.francis_cms.micropub_endpoint -%>
+  <link rel="micropub" href="<%= Rails.application.config.francis_cms.micropub_endpoint %>">
+<%- end -%>
+```

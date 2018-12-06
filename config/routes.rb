@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   mount FrancisCms::Engine, at: '/'
-
+  mount FrancisCmsMicropub::Engine => "/micropub"
+  
   scope module: 'francis_cms' do
     resources :notes, :likes do
         resources :syndications, only: [:create, :destroy]
