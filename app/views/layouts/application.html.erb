@@ -51,6 +51,9 @@
     <%- if Rails.application.config.francis_cms.token_endpoint -%>
       <link rel="token_endpoint" href="<%= Rails.application.config.francis_cms.token_endpoint %>">
     <%- end -%>
+    <%- if Rails.application.config.francis_cms.micropub_endpoint -%>
+      <link rel="micropub" href="<%= Rails.application.config.francis_cms.micropub_endpoint %>">
+    <%- end -%>
 
   </head>
 
