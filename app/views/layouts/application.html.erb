@@ -48,6 +48,9 @@
     <%- if Rails.application.config.francis_cms.authorization_endpoint -%>
       <link rel="authorization_endpoint" href="<%= Rails.application.config.francis_cms.authorization_endpoint %>">
     <%- end -%>
+    <%- if Rails.application.config.francis_cms.token_endpoint -%>
+      <link rel="token_endpoint" href="<%= Rails.application.config.francis_cms.token_endpoint %>">
+    <%- end -%>
 
   </head>
 
