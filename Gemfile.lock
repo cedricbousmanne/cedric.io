@@ -162,6 +162,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     ntlm-http (0.1.1)
     pg (0.21.0)
+    php_serialize (1.2)
     public_suffix (3.0.3)
     rack (1.6.10)
     rack-test (0.6.3)
@@ -238,6 +239,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.7)!
   francis_cms!
   francis_cms_micropub!
+  php_serialize!
   rails (~> 4.2)!
   simple-rss!
 
