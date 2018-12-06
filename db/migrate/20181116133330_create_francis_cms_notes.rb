@@ -1,7 +1,6 @@
 class CreateFrancisCmsNotes < ActiveRecord::Migration
   def up
     create_table :francis_cms_notes do |t|
-      t.text     :title
       t.text     :slug, null: false
       t.text     :body, null: false
       t.text     :excerpt
